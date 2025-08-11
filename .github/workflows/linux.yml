@@ -39,7 +39,7 @@ jobs:
           mkl@2025.0.1
         prune: false       
          
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Check Current Memory Limit
       run: ulimit -a  # Check the memory limits
@@ -100,7 +100,7 @@ jobs:
           mkl
         prune: false  
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - name: build fds debug
       run: |
         source /opt/intel/oneapi/setvars.sh
